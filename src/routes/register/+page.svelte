@@ -4,7 +4,7 @@
 
 <div class="w-screen flex justify-between items-center h-screen min-w-max bg-[#2D4059]">
 	<section
-		class="border-1 border-[#CFB997] bg-[#FFD460] flex flex-col h-screen w-2/5 justify-center items-center rounded-2xl shadow-md"
+		class="border-1 border-[#CFB997] bg-[#FFD460] flex flex-col h-screen w-2/5 justify-center items-center rounded-r-2xl shadow-md"
 	>
 		<h2 class="font-bold text-black-200 text-3xl">Register To Get Adopt-Me Account</h2>
 		<div class="flex items-center">
@@ -13,7 +13,7 @@
 		</div>
 	</section>
 	<aside class="flex flex-col justify-center items-center h-screen w-3/5">
-		<form class="flex items-center justify-center flex-col">
+		<form class="flex items-center justify-center flex-col" action="/register" method="post">
 			<div class="grid md:grid-cols-2 md:gap-6 pb-8">
 				<FloatingLabelInput
 					style="filled"
@@ -59,7 +59,7 @@
 				/>
 				<FloatingLabelInput style="filled" id="city" name="city" type="text" label="City" />
 			</div>
-			<Button pill color="yellow">Submit</Button>
+			<Button pill color="yellow" type="submit">Submit</Button>
 		</form>
 
 		<div class="flex pt-2">

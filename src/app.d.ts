@@ -9,4 +9,11 @@ declare global {
 	}
 }
 
+declare module "bun" {
+	interface Env {
+	  MAIN_URL: string;
+	}
+  }
+  
+
 export {};

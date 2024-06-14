@@ -1,4 +1,5 @@
 <script>
+	import { Button } from 'flowbite-svelte';
 	export const year = new Date().getFullYear();
 </script>
 
@@ -21,16 +22,19 @@
 				<!--       </div> -->
 				<!--     </div> -->
 				<!--   ) : ( -->
-				<a href="/login/">
-					<!-- <MyButton text="Login" style="btn-ghost btn-sm text-gray-700" /> -->
+				<Button size="xs" class="text-white bg-[#2D4059] hover:bg-gray-800" href="/login"
+					>Login</Button
+				>
+
+				<!-- <a class="border" href="/login/">
 					<button>login</button>
-				</a>
+				</a> -->
 				<!-- ) -->
 				<!-- } -->
 			</aside>
 		</nav>
 		<section class="flex justify-between items-center px-10">
-			<div class="flex flex-col">
+			<div class="flex flex-col w-3/5">
 				<p class="font-bold text-2xl text-gray-200">Adopt Me</p>
 				<p class="text-lg text-gray-200">
 					Animal adoption is one of the most effective ways to reduce the number of animals in
@@ -42,11 +46,11 @@
 					home for them.
 				</p>
 			</div>
-			<img src="/images/cat-home.png" alt="cat" class="w-96" />
+			<img src="/images/cat-home.png" alt="cat" class="w-auto" />
 		</section>
 	</header>
 
-	<section class="py-10 flex flex-col justify-center items-center w-screen bg-[#FFD460]">
+	<section class="p-10 flex flex-col justify-center items-center w-screen bg-[#FFD460]">
 		<article class="w-2/5 pb-5">
 			<p class="text-center text-lg text-gray-700">
 				Our website is dedicated to helping animals in need find loving homes through adoption,
@@ -54,9 +58,9 @@
 			</p>
 		</article>
 		<div class="grid grid-cols-3 gap-7">
-			<img src="/images/cat2.png" alt="cat" sizes="350px" class="shadow-xl rounded" />
-			<img src="/images/dog1.png" alt="cat" sizes="350px" class="shadow-xl rounded" />
-			<img src="/images/cat3.png" alt="cat" sizes="350px" class="shadow-xl rounded" />
+			<img src="/images/cat2.png" alt="cat" width="400px" class="shadow-xl rounded-xl" />
+			<img src="/images/dog1.png" alt="cat" width="400px" class="shadow-xl rounded-xl" />
+			<img src="/images/cat3.png" alt="cat" width="400px" class="shadow-xl rounded-xl" />
 		</div>
 	</section>
 
@@ -67,11 +71,20 @@
 				Through our website, potential pet owners can browse through a database of available animals
 				and filter their search based on various criteria such as age, breed, and location.
 			</p>
-			<a href="/list/">
-				<!-- <MyButton text="Let's Find Out" style="btn-neutral text-gray-200" /> -->
-				<button>Lets Find Out</button>
-			</a>
-			<img src="/images/catdog.png" alt="cat" sizes="350px" class="shadow-xl pt-10 rounded" />
+
+			<Button size="xs" class="bg-[#FFD460] text-gray-700 hover:bg-yellow-300" href="/animals"
+				>Let's Find Out</Button
+			>
+			<!-- <a class="text-white pb-10 hover:text-gray-300" href="/animals/">
+				<MyButton text="Let's Find Out" style="btn-neutral text-gray-200" /> -->
+			<!-- <button>Lets Find Out</button>
+			</a>  -->
+			<img
+				src="/images/catdog.png"
+				alt="cat"
+				width="400px"
+				class="shadow shadow-slate-500 rounded-2xl mt-8"
+			/>
 		</section>
 		<section class="py-5 flex flex-col h-1/6">
 			<p>Created With &#10084; By @sutantodadang</p>
